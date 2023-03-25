@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule Management System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body bgcolor="white">
+    <h1><B>SCHEDULE MANAGEMENT SYSTEM</B></h1>
+    <div class="topnav">
+        <a class="active" href="landing.html">Home</a>
+        <a href="table.html">Timetable</a>
+        <a href="Syllabus.html">Syllabus</a>
+        <a href="Tasks.html">Tasks</a>
+        <div class="align-right">  
+            <a href="Profile.html">Profile<img src="Profile_Image-removebg-preview.png" width="30" height="20"></a>
+          </div>
+    </div>
+<body>
+	<div class="container">
+		<h1>ADD TASK</h1>
+		<form>
+			<label for="task">Task:</label>
+			<input type="text" id="task" name="task">
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date">
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="time">
+			<button type="button" onclick="addTask()">Add Task</button>
+		</form>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Date</th>
+					<th>Time</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody id="taskList">
+			</tbody>
+		</table>
+	</div>
+	<script src="task.js"></script>
+</body>
+</html>
